@@ -1,0 +1,140 @@
+body{
+    font-family: 'Rajdhani', sans-serif;
+    background-color: rgba(235,236,231,255);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    margin-top: auto;
+}
+
+
+/* Navbar */
+
+#blogtitle{
+    font-family: 'Bungee Inline', cursive;
+    font-size: 1.7em;
+}
+
+#navbarSupportedContent{
+    font-family: 'Bungee Inline', cursive;
+    font-size: 1em;
+}
+
+#navbarItem{
+    color:rgb(255, 221, 0);
+    font-family: 'Bungee Inline', cursive;
+    font-size: 1em;
+}
+
+#navbarItem:hover{
+    color:white;
+}
+
+
+/* Footer */
+
+#githubLink{
+    color: #6e777f;
+    text-decoration: none;
+}
+
+
+/* About Page */
+
+.about{
+    font-size: 1.5em;
+}
+
+#fffLink{
+    color:black;
+}
+
+
+/* Post and Draft List */
+
+.centerstage{
+    margin:auto;
+}
+
+.postDate{
+    font-size: 0.7em;
+}
+
+.cardTitle{
+    color:rgb(38, 37, 37);
+    font-size:1.7em;
+}
+
+.card img{
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    width: 100%;
+}
+
+.card-body{
+    font-size: 1.2em;
+}
+
+
+/* Post Detail */
+
+.postDetail p{
+    font-size: 1.2em;
+}
+
+#commentAuthor{
+    color:blue;
+    font-size:0.8em;
+}
+
+#commentDate{
+    font-size: 0.8em;
+}
+
+.comments{
+    font-size:0.9em;
+}
+
+.comments a{
+    width:30px;
+    height:30px;
+    padding:0%;
+}
+
+.comments p{
+    margin-bottom:0.5em;
+}
+
+.approveHeading{
+    color:rgb(132, 50, 42);
+}
+
+#commentDisclaimer{
+    font-size: 0.9em;
+}
+
+
+/* Login */
+
+.loginForm input{
+    width:90%;
+    height:40px;
+}
+
+
+/* Delete Confirmation */
+
+#deleteButton{
+    width:90px;
+    font-size:1.1em
+}
+
+#cancel{
+    color:black;
+    text-decoration: none;
+    font-size:1em;
+}

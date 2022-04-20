@@ -1,0 +1,33 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}Drafts{% endblock %}
+
+{% block body_block %}
+
+    <div class="container-fluid col-lg-8 centerstage">
+    
+        <h1 class="mt-5 mb-4">My Drafts</h1>
+        
+        {% for post in post_list %}
+        
+        <div class="card">    
+            {% if post.image %}
+                <img src="{{ post.image.url }}" class="card-img-top">
+            {% endif %}
+
+            <div class="card-body">
+                <p class="card-text text-muted mb-1 postDate">created: {{post.create_date|date:'d-m-Y'}}</p>
+                <h5 class="card-title"><a class="cardTitle" href="{% url 'post_detail' pk=post.pk %}">{{post.title}}</a></h5>
+                <p class="card-text">{{post.text|safe|truncatechars:230}}</p>
+            </div>
+        </div>
+
+        {% empty %}
+
+        <p>You have no drafts.</p>
+    
+        {% endfor %}
+
+    </div>
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block body_block %}
+
+    <div class="px-3 py-4 mt-5 mb-4 m-auto bg-light rounded-3 col-sm-5">
+
+        <div class="container-fluid py-3">
+
+            <h2 class="mb-4">Please Login:</h2>
+
+            {% if form.errors %}
+                <p>Your username and password did not match.</p>
+            {%  endif %}
+
+            <form action="{% url 'login' %}" method="post" class='loginForm'>
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" class="btn btn-dark mt-3" value="Login">
+                <input type="hidden" name="next" value="{{next}}">
+            </form>
+
+        </div>
+    </div>
+
+{% endblock %}
