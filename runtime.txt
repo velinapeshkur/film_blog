@@ -1,2 +1,0 @@
-python-3.10.2
-web: gunicorn blog_project.wsgi
